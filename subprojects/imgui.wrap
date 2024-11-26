@@ -1,0 +1,7 @@
+[wrap-git]
+url = git@github.com:makredzic/imgui.git
+revision = v1.89.9-docking
+depth = 1
+
+[provide]
+imgui = imgui_dep

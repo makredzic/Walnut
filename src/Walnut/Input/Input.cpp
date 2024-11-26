@@ -1,7 +1,5 @@
-#include "Input.h"
-
-#include "Walnut/Application.h"
-
+#include <Walnut/Input/Input.h>
+#include <Walnut/Application.h>
 #include <GLFW/glfw3.h>
 
 namespace Walnut {
