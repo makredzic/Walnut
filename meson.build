@@ -23,10 +23,7 @@ deps = [
   dependency('glfw3'),
   dependency('glm'),
   imgui_dep,
-  vulkan_dep,
-  dependency('vulkanheaders'),
-  dependency('vulkan-memory-allocator'),
-  dependency('vulkan-validationlayers', fallback: ['vulkan-validationlayers', 'vulkan_validationlayers_dep'])
+  vulkan_dep
 ]
 
 
