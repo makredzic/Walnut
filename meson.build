@@ -26,21 +26,12 @@ deps = [
   vulkan_dep
 ]
 
-
-lib = library(
-    'walnut', 
-    sources: source_files,
-    include_directories: include,
-    dependencies: deps
-  )
-
 walnut_dep = declare_dependency(
     include_directories: include,
-    link_with: lib
-)
-
-
-walnut_exe = executable('walnut_app',
-    sources: ['src/WalnutApp/WalnutApp.cpp'],
-    dependencies: [walnut_dep, imgui_dep]
+    link_with: library(
+      'walnut', 
+      sources: source_files,
+      include_directories: include,
+      dependencies: deps
+    )
 )
