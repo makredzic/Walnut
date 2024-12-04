@@ -3,6 +3,7 @@
 build
 subprojects/*
 .cache
+.meson-subproject-wrap-hash.txt
 
 # Exclude
 !subprojects/*.wrap
